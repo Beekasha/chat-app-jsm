@@ -1,9 +1,20 @@
-import React from 'react'
+import { ChatEngine } from 'react-chat-engine';
+import './App.css'
 
-export default function App() {
+require('dotenv').config()
+
+
+
+const App = () => {
     return (
-        <div>
-            <h1>Hey</h1>
-        </div>
+        <ChatEngine
+            height='100vh'
+            projectID={process.env.PROJECT_ID}
+            userName='BkAdmin'
+            userSecret='password'
+
+        />
     )
 }
+
+export default App;
