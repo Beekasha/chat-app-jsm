@@ -1,15 +1,13 @@
 import { ChatEngine } from 'react-chat-engine';
-import './App.css'
-
 require('dotenv').config()
 
 
-
 const App = () => {
+
     return (
         <ChatEngine
             height='100vh'
-            projectID={process.env.PROJECT_ID}
+            projectID={process.env.REACT_APP_PROJECT_ID}
             userName='BkAdmin'
             userSecret='password'
 
