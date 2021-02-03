@@ -9,7 +9,6 @@ const ChatFeed = (props) => {
 
     const renderMessages = () => {
         const keys = Object.keys(messages);
-        console.log(keys)
 
         return keys.map((key, index) => {
             const message = messages[key];
