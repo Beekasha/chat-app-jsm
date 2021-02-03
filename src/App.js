@@ -8,8 +8,8 @@ const App = () => {
         <ChatEngine
             height='100vh'
             projectID={process.env.REACT_APP_PROJECT_ID}
-            userName='BkAdmin'
-            userSecret='password'
+            userName={process.env.REACT_APP_USER_NAME}
+            userSecret={process.env.REACT_APP_USER_SECRET}
 
         />
     )
